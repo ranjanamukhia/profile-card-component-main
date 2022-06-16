@@ -1,0 +1,29 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    --Dark-cyan: hsl(185, 75%, 39%);
+   --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+   --Dark-gray: hsl(0, 0%, 59%);
+  }
+  
+
+  body {
+    margin: 0;
+    font-size: 52.5%;
+   
+  }
+
+  main{
+   
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-size:300px,300px;
+     background-position: left top, right bottom;
+    background-repeat: no-repeat,  no-repeat;background-color: var(--Dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    min-height: 600px;
+    border: 2px solid red;
+   
+  }
