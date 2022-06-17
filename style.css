@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 340px;
+    max-width: 340px;
     min-height: 600px;
     
    
@@ -37,7 +37,7 @@
   .container{
    
     max-width: 300px;
-    max-height: 295px;
+   
     display: flex;
     flex-direction: column;
     /* font-size: 0.5rem; */
@@ -69,46 +69,49 @@
     border: 5px solid white;
     
   }
+  .person-details{
+    margin:0 auto;
+    width: 100%;
+    border-bottom: 1px solid var(--Dark-grayish-blue);
+    
+  }
   .person-details .name{
     display: inline-block;
     padding-top: 2rem;
    font-size: 1rem;
    font-weight: 700;
+   padding-left: 30%;
   }
   .person-details .age{
+
     display: inline-block;
     padding-top: 2rem;
    font-size: 1rem;
    font-weight: 400;
    padding-left: 0.5rem;
    color: var(--Dark-grayish-blue);
+   
+   
 
   }
 
   .person-details .place{
-
+  
    margin:0 auto;
-   padding-left: 2rem;
+   
     font-size: 0.8rem;
     font-weight: 400;
     color: var(--Dark-grayish-blue);
+    padding-left: 40%;
+    padding-bottom: 6%;
 
   }
-  .line{
-    padding-top: 0.5rem;
-    min-width: 100%;
-    font-size: 0.005rem;
-    color:rgb(180, 174, 174);
-    font-weight: 100;
-
-  }
+  
 
   .social-stats-card{
     min-width:100% ; 
     display: flex;
-    padding-top: 1.8rem;
-    border: 2px solid red;
-    
+ 
     justify-content: center;
     
   }
@@ -116,9 +119,8 @@
   .info-block{
     display: flex;
     flex-direction: row;
-    border: 2px solid yellow;
     min-width: 70%;
-    
+    gap: 2rem;
     justify-content: space-between;
     padding-bottom:3rem ;
   }
@@ -126,9 +128,43 @@
   .followers-info .number, .likes-info .number, .photos-info .number{
     font-size: 1rem;
     font-weight: 700;
+    margin:0 auto;
+    padding-top: 1.5rem;
+    padding-bottom:0.3rem ;
+  
   }
   .followers-info .type, .likes-info .type, .photos-info .type{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 400;
     color: var(--Dark-grayish-blue);
+    margin:0 auto;
+  }
+
+
+  @media screen and (max-width: 1440px) and (min-width: 340px) {
+
+    body {
+      margin: 0 auto;
+      font-size: 62.5%;
+      font-family: 'Kumbh Sans', sans-serif;
+     
+     
+    }
+
+    main{
+   
+      background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+      background-size:50%,50%;
+       background-position: right top, left bottom;
+      background-repeat: no-repeat,  no-repeat;background-color: var(--Dark-cyan);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1440px;
+      min-height: 100vh;
+      
+      
+     
+    }
+   
   }
