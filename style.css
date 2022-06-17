@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+
 *,*::before,*::after{
     box-sizing: border-box;
     --Dark-cyan: hsl(185, 75%, 39%);
@@ -10,6 +15,8 @@
   body {
     margin: 0;
     font-size: 52.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+   
    
   }
 
@@ -22,8 +29,106 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 375px;
+    width: 340px;
     min-height: 600px;
-    border: 2px solid red;
+    
    
+  }
+  .container{
+   
+    max-width: 300px;
+    max-height: 295px;
+    display: flex;
+    flex-direction: column;
+    /* font-size: 0.5rem; */
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+   
+  }
+
+.container .card{
+    position: relative;
+   
+  }
+  .container .card .back-image{
+ 
+  max-width: 300px;
+  border-radius: 20px 20px 0 0 ;
+  
+  
+  }
+  
+  .container .card .top-image{
+    position: absolute;
+    top: 4rem;
+    right: 6.6rem;
+    max-width: 30%;
+    border-radius: 100%;
+    border: 5px solid white;
+    
+  }
+  .person-details .name{
+    display: inline-block;
+    padding-top: 2rem;
+   font-size: 1rem;
+   font-weight: 700;
+  }
+  .person-details .age{
+    display: inline-block;
+    padding-top: 2rem;
+   font-size: 1rem;
+   font-weight: 400;
+   padding-left: 0.5rem;
+   color: var(--Dark-grayish-blue);
+
+  }
+
+  .person-details .place{
+
+   margin:0 auto;
+   padding-left: 2rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+
+  }
+  .line{
+    padding-top: 0.5rem;
+    min-width: 100%;
+    font-size: 0.005rem;
+    color:rgb(180, 174, 174);
+    font-weight: 100;
+
+  }
+
+  .social-stats-card{
+    min-width:100% ; 
+    display: flex;
+    padding-top: 1.8rem;
+    border: 2px solid red;
+    
+    justify-content: center;
+    
+  }
+
+  .info-block{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid yellow;
+    min-width: 70%;
+    
+    justify-content: space-between;
+    padding-bottom:3rem ;
+  }
+
+  .followers-info .number, .likes-info .number, .photos-info .number{
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .followers-info .type, .likes-info .type, .photos-info .type{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
   }
